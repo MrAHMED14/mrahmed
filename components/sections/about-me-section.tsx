@@ -7,12 +7,12 @@ export default function AboutMeSection({}: AboutMeSectionProps) {
         ABOUT ME
       </h1>
       <p className="text-xl text-center sm:text-2xl text-white/60">
-        My name is Chikhaoui Ahmed, and I am a dedicated computer science
-        engineer with a specialization in full-stack website development. I
-        possess extensive industry experience that enables me to deliver
-        high-quality, elegant websites that resonate with users and meet
-        business objectives. My focus on craftsmanship and detail ensures that
-        each project I undertake makes a meaningful impact.
+        I am Chikhaoui Ahmed, a computer science student specializing in
+        full-stack web development. With substantial industry experience, I am
+        adept at creating sophisticated and high-quality websites that engage
+        users and fulfill business goals. My commitment to excellence and
+        attention to detail guarantee that every project I handle has a
+        significant and positive effect.
       </p>
     </div>
   )

@@ -34,12 +34,10 @@ export default function ProjectsSection({}: ProjectsSectionProps) {
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://gaming-setif-clone.vercel.app/"
+                href="https://cortex-store.vercel.app/"
               >
                 <div className="">
-                  <h1 className="text-xl sm:text-2xl font-bold">
-                    Gaming Setif
-                  </h1>
+                  <h1 className="text-xl sm:text-2xl font-bold">Cortex</h1>
                   <p>E-commerce website</p>
                   <Badge variant="destructive" className="text-white">
                     <span className="font-bold pr-1">Status: </span>Not
@@ -70,7 +68,7 @@ export default function ProjectsSection({}: ProjectsSectionProps) {
                   variant="outline"
                   className="text-white hover:bg-white hover:text-black"
                 >
-                  SQLite
+                  PostgreSQL
                 </Badge>
               </div>
             </div>

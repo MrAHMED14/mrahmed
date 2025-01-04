@@ -1,6 +1,6 @@
-import { Suspense } from "react"
+import { RiReactjsFill, RiNextjsLine, RiTailwindCssFill } from "react-icons/ri"
+import { SiPostgresql } from "react-icons/si"
 import { Badge } from "@/components/ui/badge"
-
 import ProjectSkeleton from "@/components/global/project-skeleton"
 import Image from "next/image"
 import Link from "next/link"
@@ -17,12 +17,16 @@ export default function ProjectsSection({}: ProjectsSectionProps) {
         MY Projects
       </h1>
       <div className="flex flex-col gap-6">
-        <Suspense fallback={<ProjectSkeleton />}>
+        <Link
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://cortex-store.vercel.app"
+        >
           <div className="max-sm:flex-col sm:flex gap-6 max-sm:justify-center max-sm:items-center sm:items-center p-5 bg-white/10  sm:h-40 rounded-sm">
             <div className="max-sm:w-full max-sm:mb-2  max-sm:flex max-sm:items-center max-sm:justify-center">
               <div className="w-full max-h-80 sm:w-48 sm:h-32 rounded bg-white/20">
                 <Image
-                  src={"/image.png"}
+                  src={"/cortex-cover.png"}
                   width={192}
                   height={192}
                   alt="project 01"
@@ -31,49 +35,34 @@ export default function ProjectsSection({}: ProjectsSectionProps) {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <Link
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://cortex-store.vercel.app/"
-              >
-                <div className="">
-                  <h1 className="text-xl sm:text-2xl font-bold">Cortex</h1>
-                  <p>E-commerce website</p>
-                  <Badge variant="destructive" className="text-white">
-                    <span className="font-bold pr-1">Status: </span>Not
-                    completed
-                  </Badge>
-                </div>
-              </Link>
-              <div className="flex flex-wrap gap-4 ">
-                <Badge
-                  variant="outline"
-                  className="text-white hover:bg-white hover:text-black"
-                >
-                  React.js
+              <div className="">
+                <h1 className="text-xl sm:text-2xl font-bold">Cortex store</h1>
+                <p>E-commerce website</p>
+                <Badge variant="destructive" className="text-white">
+                  <span className="font-bold pr-1">Status: </span>Not completed
                 </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-white hover:bg-white hover:text-black"
-                >
-                  Next.js
+              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-2">
+                <Badge variant="outline" className="text-xs border-gray-50/30">
+                  <RiReactjsFill className="mr-1 h-4 w-4 flex-shrink-0" />
+                  ReactJS
                 </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-white hover:bg-white hover:text-black w-fit"
-                >
-                  Strapi
+                <Badge variant="outline" className="text-xs border-gray-50/30">
+                  <RiNextjsLine className="mr-1 h-4 w-4 flex-shrink-0" />
+                  NextJS
                 </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-white hover:bg-white hover:text-black"
-                >
+                <Badge variant="outline" className="text-xs border-gray-50/30">
+                  <RiTailwindCssFill className="mr-1 h-4 w-4 flex-shrink-0" />
+                  Tailwind css
+                </Badge>
+                <Badge variant="outline" className="text-xs border-gray-50/30">
+                  <SiPostgresql className="mr-1 h-4 w-4 flex-shrink-0" />
                   PostgreSQL
                 </Badge>
               </div>
             </div>
           </div>
-        </Suspense>
+        </Link>
 
         <ProjectSkeleton />
         <ProjectSkeleton />

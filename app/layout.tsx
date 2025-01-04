@@ -8,27 +8,13 @@ import { cn } from "@/lib/utils"
 import StarCanvas from "@/components/star-background/star-canvas"
 import Navbar from "@/components/navbar/navbar"
 import Footer from "@/components/global/footer"
-
-const inter = Inter({ subsets: ["latin"] })
+import { inter } from "./styles/fonts"
 
 export const metadata: Metadata = {
   title: "MrAHMED",
   description: "My name is Chikhaoui Ahmed. I am a full-stack web developer",
   verification: {
     google: "SiypDumEEYY334xchqMlyfBKIbJH7BPrchXsZwAF0x8",
-  },
-
-  openGraph: {
-    title: "Chikhaoui Ahmed",
-    description: "My name is Chikhaoui Ahmed. I am a full-stack web developer",
-    type: "website",
-    siteName: "Chikhaoui Ahmed",
-    url: "https://mrahmed.vercel.app/",
-    images: [
-      {
-        url: "https://mrahmed.vercel.app/apple-icon.png",
-      },
-    ],
   },
 
   keywords:
@@ -48,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
+        style={inter.style}
         suppressHydrationWarning
         className={cn(
           inter.className,

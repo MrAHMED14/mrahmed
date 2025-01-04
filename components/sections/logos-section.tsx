@@ -3,15 +3,15 @@ import MarqueeAnimation from "../global/marquee-animation"
 interface LogosSectionProps {}
 
 const images = [
-  { src: "/next.svg", alt: "mrbeast" },
-  { src: "/logos2/reactjs2.svg", alt: "javascript" },
-  { src: "/logos2/html5.svg", alt: "javascript" },
-  { src: "/logos2/css3.svg", alt: "javascript" },
-  { src: "/logos2/javascript22.svg", alt: "javascript" },
-  { src: "/logos2/typescript-2020.svg", alt: "javascript" },
-  { src: "/logos2/php2.svg", alt: "javascript" },
-  { src: "/logos2/tailwind-css.svg", alt: "tailwind-css" },
-  { src: "/logos2/nodejs-2015.svg", alt: "nodejs" },
+  { src: "/logos/next.svg", alt: "nextjs" },
+  { src: "/logos/reactjs2.svg", alt: "reactjs" },
+  { src: "/logos/html5.svg", alt: "html" },
+  { src: "/logos/css3.svg", alt: "css" },
+  { src: "/logos/javascript22.svg", alt: "javascript" },
+  { src: "/logos/typescript-2020.svg", alt: "typescript" },
+  { src: "/logos/php2.svg", alt: "php" },
+  { src: "/logos/tailwind-css.svg", alt: "tailwind-css" },
+  { src: "/logos/nodejs-2015.svg", alt: "nodejs" },
 ]
 
 export default function LogosSection({}: LogosSectionProps) {

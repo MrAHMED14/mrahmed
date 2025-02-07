@@ -37,8 +37,8 @@ export default function RootLayout({
         style={inter.style}
         suppressHydrationWarning
         className={cn(
-          inter.className,
-          "dark flex flex-col min-h-screen bg-black"
+          "dark flex flex-col min-h-screen bg-black",
+          inter.className
         )}
       >
         <Toaster position="top-center" richColors />

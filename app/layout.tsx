@@ -16,7 +16,9 @@ export const metadata: Metadata = {
   verification: {
     google: "SiypDumEEYY334xchqMlyfBKIbJH7BPrchXsZwAF0x8",
   },
-
+  twitter: {
+    card: "summary_large_image",
+  },
   keywords:
     "nextjs, reactjs, full-stack, dev, developer, full-stack-developer, portfolio, chikhaoui, ahmed, mr-ahmed, chikhaoui-ahmed, chikhaoui-ahmed-portfolio, portfolio-of-chikhaoui-ahmed",
   robots: {

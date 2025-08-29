@@ -39,7 +39,7 @@ export default function ContactForm({}: ContactFormProps) {
 
   async function onSubmit({}) {
     setIsLoading(true)
-    toast.success("Your email has been sent successfully.")
+    toast.warning("This feature is under maintenance")
     setIsLoading(false)
   }
 
